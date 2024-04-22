@@ -18,7 +18,6 @@ int main() {
     printf("Digite uma string: ");
     fgets(str, max, stdin);
 
-    // Remover o '\n' do final da string inserida pelo fgets
     str[strcspn(str, "\n")] = 0;
 
     printf("String invertida: ");
