@@ -10,10 +10,10 @@ int main() {
     char str2[max];
 
     printf("Digite a primeira string: ");
-    fgets(str1, max, stdin);
+    fgets(str1, sizeof(str1), stdin);
 
     printf("Digite a segunda string: ");
-    fgets(str2, max, stdin);
+    fgets(str2, sizeof(str2), stdin);
 
     str1[strcspn(str1, "\n")] = '\0';
     str2[strcspn(str2, "\n")] = '\0';

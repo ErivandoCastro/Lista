@@ -10,7 +10,7 @@ int main(){
 
     printf("Digite %d elementos do vetor:\n", tamanho);
     for (int i = 0; i < tamanho; i++) {
-        printf("Elemento %d: ", i + 1);
+        printf("Elemento %d: ", i);
         scanf("%f", &vetor[i]);
     }
 
@@ -26,7 +26,7 @@ int main(){
     }
 
     soma = menor + maior;
-    printf("A soma do menor e do maior elemento do vetor e: %.2f\n", soma);
+    printf("A soma do menor e do maior elemento do vetor eh: %.2f\n", soma);
 
     return 0;
 }
