@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-#define max 100
+#define max 100 
 
-int main() {
-    char origem[max] = "Hello, world!";
-    char destino[max];
-    
-    char *src = origem;
-    char *dest = destino;
-    
+void copiarString(char *dest, const char *src) {
     while (*src != '\0') {
         *dest = *src;
         src++;
-        dest++;
+        dest++; 
     }
+    *dest = '\0'; 
+}
+
+int main() {
+    char origem[max] = "Hello, world!"; 
+    char destino[max];
     
-    *dest = '\0';
+    copiarString(destino, origem);
     
     printf("String de origem: %s\n", origem);
     printf("String de destino: %s\n", destino);

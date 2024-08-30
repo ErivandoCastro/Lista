@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-int main(){
+void soma(int *ptr1, int *ptr2, int *ptrResultado) {
+    *ptrResultado = *ptr1 + *ptr2;
+}
+
+int main() {
     int num1, num2, resultado;
     int *ptr1, *ptr2, *ptrResultado;
 
@@ -13,7 +17,7 @@ int main(){
     printf("Digite o segundo valor: ");
     scanf("%d", ptr2);
 
-    *ptrResultado = *ptr1 + *ptr2;
+    soma(ptr1, ptr2, ptrResultado);
 
     printf("Resultado da soma: %d\n", *ptrResultado);
     printf("Endereco de memoria do valor resultante: %p\n", ptrResultado);
